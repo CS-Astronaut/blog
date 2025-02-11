@@ -1,0 +1,46 @@
+/* styles/about.css */
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #1a1a2e;
+    color: #eaeaea;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    padding: 20px;
+    background-color: #0f3460;
+    color: #e94560;
+    text-align: center;
+}
+
+main {
+    padding: 20px;
+    text-align: left;
+}
+
+.about-me {
+    background-color: #16213e;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.resume {
+    background-color: #16213e;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+ul li {
+    margin: 10px 0;
+    background-color: #e94560;
+    padding: 10px;
+    border-radius: 5px;
+}

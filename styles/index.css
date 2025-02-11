@@ -1,0 +1,114 @@
+/* styles/index.css */
+
+body {
+    font-family:"Roboto", serif;
+    display: flex;
+    flex-direction: column;
+    background-color: #1a1a2e;
+    color: #eaeaea;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+header {
+    font-family:"Sixtyfour Convergence",serif ;
+    padding: 1rem;
+    background-color: #0f3460;
+    color: #e94560;
+
+    background-image: url('/img/freepik__the-style-is-pixel-art-with-a-retro-8bit-pixelated__94118.png');
+    background-size: 6rem;
+    background-position: center;
+
+}
+
+
+.content-wrapper {
+    display: flex;
+    flex: 1;  /* Takes up remaining vertical space */
+}
+
+main {
+    display: flex;
+    flex: 3;
+    justify-content: center;
+    align-items: flex-start; /* Align items at the top */
+    gap: 20px; /* Space between content-box and sidebar */
+    padding: 20px;
+    height: calc(100vh - 120px); /* Ensure it doesn't exceed screen height */
+}
+
+
+.content-box {
+    flex: 1; /* Larger portion of the screen */
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+    place-items: center; /* Centers both horizontally & vertically */
+    gap: 20px;
+    padding: 20px;
+    overflow-y: scroll;
+    max-height: 460px;
+    background-color: #16213e;
+    border: 2px solid #0f3460;
+    border-radius: 10px;
+}
+
+
+.sidebar {
+    flex: 1; /* Smaller portion of the screen */
+    background-color: #16213e;
+    border: 2px solid #0f3460;
+    border-radius: 10px;
+    color: #eaeaea;
+    margin-top: 20px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+
+}
+
+
+
+.card {
+    flex: 1;
+    background-color: #e94560;
+    padding: 10px;
+    border-radius: 10px;
+    color: #1a1a2e;
+}
+
+.card-img {
+    max-width: 100%;
+}
+
+footer {
+    padding: 10px;
+    background-color: #0f3460;
+    color: #eaeaea;
+}
+
+
+.button {
+    border: #1a1a2e;
+    padding: 10px;
+    background-color: #e94560;
+    margin: 10px;
+    border-radius: 10px;
+}
+
+
+
+/* Make layout responsive */
+@media (max-width: 1000px) {
+    .content-wrapper {
+        flex-direction: column;
+    }
+    
+    .sidebar {
+        order: 1;  /* Moves sidebar below main content on mobile */
+        margin-left: 20px;
+        margin-left: 0px;
+
+
+    }
+}
