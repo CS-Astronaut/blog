@@ -68,10 +68,9 @@ main {
 }
 
 
-
 .card {
     flex: 1;
-    background-color: #e94560;
+    background-color: #F83B3A;
     padding: 10px;
     border-radius: 10px;
     color: #1a1a2e;
@@ -91,7 +90,7 @@ footer {
 .button {
     border: #1a1a2e;
     padding: 10px;
-    background-color: #e94560;
+    background-color: #FF4E47;
     margin: 10px;
     border-radius: 10px;
 }
@@ -107,8 +106,10 @@ footer {
     .sidebar {
         order: 1;  /* Moves sidebar below main content on mobile */
         margin-left: 20px;
-        margin-left: 0px;
+        margin-top: 0px;
+    }
 
-
+    header {
+        font-size: small;
     }
 }
