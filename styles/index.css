@@ -16,13 +16,16 @@ header {
     padding: 1rem;
     background-color: #0f3460;
     color: #e94560;
-
     background-image: url('/img/freepik__the-style-is-pixel-art-with-a-retro-8bit-pixelated__94118.png');
     background-size: 6rem;
     background-position: center;
 
 }
 
+a {
+    text-decoration:none;
+    color: #FFFF00;
+}
 
 .content-wrapper {
     display: flex;
@@ -36,14 +39,13 @@ main {
     align-items: flex-start; /* Align items at the top */
     gap: 20px; /* Space between content-box and sidebar */
     padding: 20px;
-    height: calc(100vh - 120px); /* Ensure it doesn't exceed screen height */
+    height: calc(100vh - 100px); /* Ensure it doesn't exceed screen height */
 }
-
 
 .content-box {
     flex: 1; /* Larger portion of the screen */
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
     place-items: center; /* Centers both horizontally & vertically */
     gap: 20px;
     padding: 20px;
@@ -64,16 +66,32 @@ main {
     margin-top: 20px;
     margin-right: 20px;
     margin-bottom: 20px;
+    max-height: 460px;
+}
 
+.contact-me {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin: 20px;
+    padding: 10 px;
+}
+
+.social-media-icons {
+    width: 30px;
 }
 
 
 .card {
     flex: 1;
-    background-color: #F83B3A;
+    width: 190px;
+    height: 150px;
+    background-color: #10375C;
     padding: 10px;
     border-radius: 10px;
     color: #1a1a2e;
+    align-content: center;
+    justify-content: center;
 }
 
 .card-img {
@@ -90,9 +108,11 @@ footer {
 .button {
     border: #1a1a2e;
     padding: 10px;
-    background-color: #FF4E47;
+    background-color: #1a1a2e;
     margin: 10px;
     border-radius: 10px;
+    font-family: 'Workbench',serif;
+    font-size: large;
 }
 
 
